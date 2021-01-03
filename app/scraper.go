@@ -19,6 +19,7 @@ func (app *Application) ScrapeWord(dictionary string, output_type string, word s
 	// for iframe solution does not need to do request call
 	if output_type == OUTPUT_TYPE_IFRAME {
 		iframeMarkup := "<body style=\"top:0;left: 0;width:100%;height: 100%; position: absolute; border: none;overflow:hidden;\">\n<iframe src=\"IFRAME_SOURCE\" frameborder=\"0\" style=\"top:0;left: 0;width:100%;height: 100%; position: absolute; border: none\"></iframe>\n</body>"
+		iframeMarkup = strings.ReplaceAll(iframeMarkup, "IFRAME_SOURCE", wordUrl)
 		return iframeMarkup, nil
 	}
 	// if user want the full html of the page
