@@ -14,7 +14,7 @@
         }
         if ($("#longman").is(':checked')) {
             $("#full_html").attr("disabled", false).prop('checked', true).click();
-            $("#iframe").attr("disabled", true);
+            $("#iframe").attr("disabled", false);
         }
     }
 })(jQuery);

@@ -17,7 +17,8 @@ func (app *Application) TranslateRequestHandler(c echo.Context) error {
 	switch dictionary {
 	case LONGMAN:
 		dictionary = LONGMAN
-		app.Config.BaseUrl = "https://www.ldoceonline.com/dictionary/"
+		//app.Config.BaseUrl = "https://www.ldoceonline.com/dictionary/"
+		app.Config.BaseUrl = "https://cors.yuseferi.workers.dev/dictionary/"
 	case LINGUEE:
 		dictionary = LINGUEE
 		app.Config.BaseUrl = "https://www.linguee.com/english-german/search?source=auto&query="

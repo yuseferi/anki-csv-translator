@@ -13,6 +13,12 @@ Next step will be storing CSV file into the your AnkiDroid Deck.
 This project has written in Golang. so you need to have golang in your machine.
 then copy `.ENV.dist` file to `.ENV`, change values as you wish then run the project with `go run main.go`
 after that you see the interface on [localhost](http://localhost:8086)
+
+### cors and cloudflare helps to use longman in iframe
+sample: https://cors.yuseferi.workers.dev/dictionary/test
+how : https://github.com/Darkseal/CORSflare/issues
+ 
+
 #### Contribution
 Feel free to create PR to develop this project.
 
